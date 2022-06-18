@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Calculadora de porcentagem</title>
 </head>
 <body>
-    <div>
-        <h1>Calculadora de porcentagem</h1>
-    </div>
-    <div>
-        <form action="">
-            <label for="conta">
-                <p>Qual o valor gasto?</p>
-            </label>
-            <p>
-                R$ <input type="number" placeholder="Informe valor" name="conta" id="conta"/>
-            </p>
-            <label for="valorPorcentagem">
-                <p>Qual valor da porcentagem?</p>
-            </label>
-            <p>
-                <select name="valorPorcentagem" id="valorPorcentagem">
-                    <option disable selected>Selecione uma opção</option>
-                    <option value="0.3">30% - Excelente</option>
-                    <option value="0.2">20% - Bom</option>
-                    <option value="0.15">15% - Aceitável</option>
-                    <option value="0.1">10% - Ruim</option>
-                    <option value="0.05">30% - Péssimo</option>
-                </select>
-            </p>
-        </form>
+    <div id="container">
+        <div>
+            <h1 class="title">Calculadora de porcentagem</h1>
+        </div>
+        <div>
+            <form class="form" action="">
+                <label for="conta">
+                    <p>Qual o valor gasto?</p>
+                </label>
+                <p>
+                    R$ <input type="number" placeholder="Informe valor" name="conta" id="conta" class="form_input"/>
+                </p>
+                <label for="valorPorcentagem">
+                    <p>Qual valor da porcentagem?</p>
+                </label>
+                <p>
+                    <select name="valorPorcentagem" id="valorPorcentagem" class="form_select">
+                        <option disable selected>Selecione uma opção</option>
+                        <option value="0.3">30% - Excelente</option>
+                        <option value="0.2">20% - Bom</option>
+                        <option value="0.15">15% - Aceitável</option>
+                        <option value="0.1">10% - Ruim</option>
+                        <option value="0.05">30% - Péssimo</option>
+                    </select>
+                </p>
+                <label for="pessoas">
+                    <p>Dividido para quantas pessoas?</p>
+                </label>
+                <p>
+                    <input type="number"  placeholder="Quantidade de pessoas" name="pessoas" id="pessoas" class="form_input"/>
+                </p>
+                <button type="submit" class="form_submit">Calcular</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
