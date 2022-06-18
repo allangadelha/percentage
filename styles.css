@@ -15,7 +15,7 @@ body{
     background: #FFFFEE;
     box-shadow: 5px 5px 5px var(--tertiary-color);
     border-radius: 15px;
-    height: 525px;
+    height: 600px;
     margin: 100px auto;
     width: 360px;
 }
@@ -38,7 +38,7 @@ body{
 .form_input {
     background-color: #FFFFFF;
     padding: 5px 5px 8px 8px;
-    width: 40px;
+    width: 100px;
 }
 
 .form_input:focus {
@@ -52,14 +52,20 @@ body{
 }
 
 .form_submit {
-    text-transform: uppercase;
-    font-weight: 700;
-    display: block;
-    margin: 30px auto;
     background: var(--sencondary-color);
     border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    font-size: 17px;
     color: var(--primary-color);
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    height: 50px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+#total_porcentagem {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
 }

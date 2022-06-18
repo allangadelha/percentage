@@ -13,12 +13,12 @@
             <h1 class="title">Calculadora de porcentagem</h1>
         </div>
         <div>
-            <form class="form" action="">
+            <form id="form" class="form" action="">
                 <label for="conta">
                     <p>Qual o valor gasto?</p>
                 </label>
                 <p>
-                    R$ <input type="number" placeholder="Informe valor" name="conta" id="conta" class="form_input"/>
+                    R$ <input type="number" placeholder="Ex.: 100" name="conta" id="conta" class="form_input" required />
                 </p>
                 <label for="valorPorcentagem">
                     <p>Qual valor da porcentagem?</p>
@@ -37,11 +37,17 @@
                     <p>Dividido para quantas pessoas?</p>
                 </label>
                 <p>
-                    <input type="number"  placeholder="Quantidade de pessoas" name="pessoas" id="pessoas" class="form_input"/>
+                    <input type="number" placeholder="Ex.: 2" name="pessoas" id="pessoas" class="form_input" required />
                 </p>
                 <button type="submit" class="form_submit">Calcular</button>
             </form>
         </div>
+        <div id="total_porcentagem">
+            Porcentagem total:
+            R$ <span id="porcentagem">0,00</span>
+            <span id="cada">cada</span>
+        </div>
     </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
